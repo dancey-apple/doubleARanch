@@ -3,9 +3,21 @@
 }
 
 html{
-    background-image: url("cowHide.png");
-    background-size: cover;
     font-family: "Fredoka";
+}
+/*Home Page, headers*/
+#home-background{
+    background-image: url("bigSlabDoubleMeat.png");
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(48, 1, 11);
+}
+
+a:hover{
+    color: rgb(102, 14, 14);
 }
 
 #header-background{
@@ -28,8 +40,77 @@ html{
 .main{
     margin-top: 100px;
     color: rgb(229, 203, 179);
-    font-size: 75px;
+    font-size: 25px;
 }
+
+/*Products Page*/
+
+#product-background{
+    background-image: url("marble.png");
+    background-size: cover;
+}
+
+.products{
+    margin: 100px 0;
+}
+
+.products h2{
+    color:rgb(48, 1, 11);
+    font-size: 50px;
+}
+
+#packages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.product h3{
+    font-size: 50px;
+}
+.product{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 40px;
+    background-color: rgb(48, 1, 11);
+    color: rgb(229, 203, 179);
+    border-radius: 10px;
+    width: 95%;
+    font-size: 22px;
+}
+
+img{
+    max-width: 60%;
+    border-radius: 10px;
+}
+
+.desc-right{
+    margin: 0;
+}
+
+.desc-left{
+    margin: 0;
+    padding-left: 25px;
+}
+
+#discount{
+    color:rgb(216, 32, 32);
+    font-size: 17px;
+}
+
+/*order form*/
+
+/*About Page*/
+
+/*Contact Page*/
+
+/*footers*/
 
 #footer-background{
     position: fixed;

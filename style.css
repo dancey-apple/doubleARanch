@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url("cowHide.png");
+    background-size: cover;
+    font-family: "Fredoka";
+}
+
+#header-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(229, 203, 179);
+    opacity: 75%;
+}
+
+#header{
+    display: flex;
+    color: rgb(48, 1, 11);
+    justify-content: space-between;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.main{
+    margin-top: 100px;
+    color: rgb(229, 203, 179);
+    font-size: 75px;
+}
+
+#footer-background{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(229, 203, 179);
+    opacity: 75%;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(48, 1, 11);
+}
+.address{
+    margin: 2px;
+}

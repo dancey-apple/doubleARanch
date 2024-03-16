@@ -7,7 +7,7 @@ html{
 }
 /*Home Page, headers*/
 #home-background{
-    background-image: url("bigSlabDoubleMeat.png");
+    background-image: url("imgs/bigSlabDoubleMeat.png");
     background-size: cover;
 }
 
@@ -46,7 +46,7 @@ a:hover{
 /*Products Page*/
 
 #product-background{
-    background-image: url("marble.png");
+    background-image: url("imgs/marble.png");
     background-size: cover;
     position: fixed;
     top: 0;

@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6dc0eca95.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="product-background"></div>
@@ -15,13 +16,16 @@
                 <h1><a href="products.html">Products</a></h1>
                 <h1><a href='order-form.html'>Order Form</a></h1>
                 <h1><a href='about.html'>About</a></h1>
+                <button id="login-button">Login</button>
+                <div id="avatar" style="display: 'none';"></div>
+                <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </div>
         <div class="products">
             <div id="packages">
                 <h2>Packages</h2>
                 <div class="product">
-                    <img id="side-o-beef" src="beef-cuts.jpg" alt="beef-cuts">
+                    <img id="side-o-beef" src="imgs/beef-cuts.jpg" alt="beef-cuts">
                     <div class = "desc-right">
                         <h3>By the side</h3>
                         <p id="discount">We offer a discount if you purchase our beef by the side.</p>
@@ -43,10 +47,10 @@
                         <p>So juicy you'll need a spoon. Cuts range from T-Bone, to Filet Minon.</p>
                         <p>Price Varies by cut.</p>
                     </div>
-                    <img id="steak" src="steakCooked.png" alt="steak">
+                    <img id="steak" src="imgs/steakCooked.png" alt="steak">
                 </div>
                 <div class="product">
-                    <img id="roast" src="roast.png" alt="roast">
+                    <img id="roast" src="imgs/roast.png" alt="roast">
                     <div class="desc-right">
                         <h3>Roasts</h3>
                         <p>Our roasts are perfect for slow-cooking in the oven or in a crockpot. They are perfect for a Sunday dinner.</p>
@@ -59,10 +63,10 @@
                         <p>Perfect for hamburgers, tacos, or meatloaf. Our ground beef is 90/10, so you don't need to drain it! I can smell it now...</p>
                         <p>Price: $5.00 per pound</p>
                     </div>
-                    <img id="ground-beef" src="burger.png" alt="ground-beef">
+                    <img id="ground-beef" src="imgs/burger.png" alt="ground-beef">
                 </div>
                 <div class="product">
-                    <img id="jerky" src="jerky.png" alt="jerky">
+                    <img id="jerky" src="imgs/jerky.png" alt="jerky">
                     <div class="desc-right">
                         <h3>Beef Jerky</h3>
                         <p>Our beef jerky is made from the finest cuts of beef. It is perfect for a snack on the go.</p>
@@ -81,5 +85,6 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

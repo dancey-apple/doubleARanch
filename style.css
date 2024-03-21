@@ -92,6 +92,14 @@ a:hover{
     font-size: 22px;
 }
 
+
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 img{
     max-width: 60%;
     border-radius: 10px;

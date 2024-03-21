@@ -1,5 +1,5 @@
 
-//--Aatar creation--
+//--Avatar creation--
 let username;
 let unArr;
 let avatar;
@@ -32,3 +32,33 @@ function displayAvatar() {
 }
 
 //--Shopping Cart--
+const cart = [];
+
+
+// Shopping Cart Icon - Button
+const addToCart = document.getElementById('add-quarter');
+addToCart.onclick = addItemToCart;
+
+// Add to cart button(s)
+function addItemToCart() {
+    const item = {
+        name: "quarter",
+        price: 500
+    }
+    cart.push(item);
+    //updateCartList();
+    //updateCartTotal();
+    console.log(cart);
+}
+
+
+// # of items icon
+
+// Add to cart button(s)
+
+// Update Cart List
+function updateCartList(){}
+// Update Cart Total
+function updatCartTotal(){}
+// Remove from Cart Button
+

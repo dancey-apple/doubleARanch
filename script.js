@@ -35,88 +35,60 @@ console.log('ready for you to push a button')
 const cart = [];
 const items = [
     {
-        name: "quarter",
+        itemName: "quarter",
         price: 500
     },
     {
-        name: "half",
+        itemName: "half",
         price: 900
     },
     {
-        name: "whole",
+        itemName: "whole",
         price: 1500
     },
     {
-        name: "steak",
+        itemName: "steak",
         price: 12.00
     }, 
     {
-        name: "roast",
+        itemName: "roast",
         price: 8.00
     }, 
     {
-        name: "ground beef",
+        itemName: "ground beef",
         price: 5.00
     }, 
     {
-        name: "jerky",
+        itemName: "jerky",
         price: 15.00
     }
 
 ];  
 const addToCart = document.getElementsByClassName('add-to-cart');
-const buttonID = document.getElementById("add-*");
-addToCart.onclick = addItemToCart;
+Array.from(addToCart).forEach((button) => button.onclick = addItemToCart);
 
 // Add to cart button(s)
-function addItemToCart() {
-    let item;
-    if (buttonID === "quarter") {   
-        item = items[0];
-        cart.push(item);
+function addItemToCart(e) {
+    let item = e.target.id;
+
+    for (let i = 0; i < items.length; i++) {
+        if (items[i].name === item) {
+            item = items[i];
+            break;
+        }
     }
-    else if (buttonID === "half") {   
-        item = items[1];
-        cart.push(item);
-        console.log(cart);
-    }
-    else if (buttonID === "whole") {   
-        item = items[2];
-        cart.push(item);
-        console.log(cart);
-    }
-    else if (buttonID === "steak") {   
-        item = items[3];
-        cart.push(item);
-        console.log(cart);
-    }
-    else if (buttonID === "roast") {   
-        item = items[4];
-        cart.push(item);
-        console.log(cart);
-    }
-    else if (buttonID === "ground beef") {   
-        item = items[5];
-        cart.push(item);
-        console.log(cart);
-    }
-    else if (buttonID === "jerky") {   
-        item = items[6];
-        cart.push(item);
-        console.log(cart);
-    }
-    else {
-        console.log("Error: Item not found");
-    }
-    console.log(cart);
+
+    cart.push(item);
+    console.log(`Items In Cart: ${cart.itemName}`);
+    console.log(cart);  
+    
 }
 
-
-// # of items icon
-
-// Update Cart List
-function updateCartList(){}
 // Update Cart Total
-function updatCartTotal(){}
+function updatCartTotal(){
+    let total = 0;
+    //for...
+}
+
 // Remove from Cart Button
 

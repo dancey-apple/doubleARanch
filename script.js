@@ -75,32 +75,32 @@ function addItemToCart() {
         item = items[0];
         cart.push(item);
     }
-    if (buttonID === "half") {   
+    else if (buttonID === "half") {   
         item = items[1];
         cart.push(item);
         console.log(cart);
     }
-    if (buttonID === "whole") {   
+    else if (buttonID === "whole") {   
         item = items[2];
         cart.push(item);
         console.log(cart);
     }
-    if (buttonID === "steak") {   
+    else if (buttonID === "steak") {   
         item = items[3];
         cart.push(item);
         console.log(cart);
     }
-    if (buttonID === "roast") {   
+    else if (buttonID === "roast") {   
         item = items[4];
         cart.push(item);
         console.log(cart);
     }
-    if (buttonID === "ground beef") {   
+    else if (buttonID === "ground beef") {   
         item = items[5];
         cart.push(item);
         console.log(cart);
     }
-    if (buttonID === "jerky") {   
+    else if (buttonID === "jerky") {   
         item = items[6];
         cart.push(item);
         console.log(cart);

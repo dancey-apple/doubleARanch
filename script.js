@@ -55,7 +55,7 @@ const items = [
         price: 8.00
     }, 
     {
-        itemName: "ground beef",
+        itemName: "beef",
         price: 5.00
     }, 
     {
@@ -69,25 +69,51 @@ Array.from(addToCart).forEach((button) => button.onclick = addItemToCart);
 
 // Add to cart button(s)
 function addItemToCart(e) {
-    let item = e.target.id;
+    let item = items.find((item) => item.itemName === e.target.id);
+    if (item) {
+        cart.push(item);
+        quantity = getItemQuantity(item);
+        getCartQuantities();
+        updateCartTotal();
+        }
+}
 
-    for (let i = 0; i < items.length; i++) {
-        if (items[i].name === item) {
-            item = items[i];
-            break;
+function getCartQuantities(){
+    let cartQuantities = {};
+    for (let i = 0; i < cart.length; i++){
+        if (cart[i].itemName in cartQuantities){
+            cartQuantities[cart[i].itemName] += 1;
+        } else {
+            cartQuantities[cart[i].itemName] = 1;
         }
     }
+    prettyPrintCart(cartQuantities);
+}
 
-    cart.push(item);
-    console.log(`Items In Cart: ${cart.itemName}`);
-    console.log(cart);  
-    
+function prettyPrintCart(cartQuantities){
+    for (let key in cartQuantities){
+        console.log(`You have ${cartQuantities[key]} ${key}'s in your cart`);
+    }
+}
+
+
+function getItemQuantity(item){
+    let quantity = 0;
+    for (let i = 0; i < cart.length; i++){
+        if (cart[i].itemName === item.itemName){
+            quantity += 1;
+            }
+    }
+    return quantity;
 }
 
 // Update Cart Total
-function updatCartTotal(){
+function updateCartTotal(){
     let total = 0;
-    //for...
+    for (let i = 0; i < cart.length; i++){
+        total += cart[i].price;
+    }
+    console.log(`Total: ${total}`);
 }
 
 // Remove from Cart Button
